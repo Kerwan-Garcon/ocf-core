@@ -8,8 +8,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	swaggerFiles "github.com/swaggo/files"
-	ginSwagger "github.com/swaggo/gin-swagger"
+	// swaggerFiles "github.com/swaggo/files"
+	// ginSwagger "github.com/swaggo/gin-swagger"
 
 	// "soli/formations/docs"
 
@@ -88,7 +88,7 @@ func main() {
 
 	courseController.CoursesRoutes(apiGroup, &config.Configuration{}, sqldb.DB)
 
-	initSwagger(r)
+	// initSwagger(r)
 
 	r.Run(":8000")
 }
