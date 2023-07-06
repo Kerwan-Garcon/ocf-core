@@ -11,7 +11,7 @@ import (
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
 
-	"soli/formations/docs"
+	// "soli/formations/docs"
 
 	config "soli/formations/src/configuration"
 	marp "soli/formations/src/marp_integration"
@@ -93,14 +93,14 @@ func main() {
 	r.Run(":8000")
 }
 
-func initSwagger(r *gin.Engine) {
-	docs.SwaggerInfo.Title = "User API"
-	docs.SwaggerInfo.Description = "This is a sample server for managing users"
-	docs.SwaggerInfo.Version = "1.0"
-	docs.SwaggerInfo.Host = "localhost:8000"
-	docs.SwaggerInfo.BasePath = "/api/v1"
-	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
-}
+// func initSwagger(r *gin.Engine) {
+// 	docs.SwaggerInfo.Title = "User API"
+// 	docs.SwaggerInfo.Description = "This is a sample server for managing users"
+// 	docs.SwaggerInfo.Version = "1.0"
+// 	docs.SwaggerInfo.Host = "localhost:8000"
+// 	docs.SwaggerInfo.BasePath = "/api/v1"
+// 	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
+// }
 
 func initDB() {
 	if sqldb.DBType == "sqlite" {
