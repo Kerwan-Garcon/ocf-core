@@ -90,7 +90,7 @@ func main() {
 
 	// initSwagger(r)
 
-	r.Run(":8000")
+	r.Run("0.0.0.0:8000")
 }
 
 // func initSwagger(r *gin.Engine) {
