@@ -18,7 +18,7 @@ import (
 	"soli/formations/src/middleware"
 
 	"soli/formations/src/auth/dto"
-	authModels "soli/formations/src/auth/models"
+	// authModels "soli/formations/src/auth/models"
 	groupController "soli/formations/src/auth/routes/groupRoutes"
 	loginController "soli/formations/src/auth/routes/loginRoutes"
 	organisationController "soli/formations/src/auth/routes/organisationRoutes"
@@ -59,17 +59,17 @@ func main() {
 
 	print("DB connected")
 
-	sqldb.DB.AutoMigrate(&authModels.User{})
-	sqldb.DB.AutoMigrate(&authModels.SshKey{})
-	sqldb.DB.AutoMigrate(&authModels.Role{})
-	sqldb.DB.AutoMigrate(&authModels.Group{})
-	sqldb.DB.AutoMigrate(&authModels.Organisation{})
-	sqldb.DB.AutoMigrate(&authModels.Permission{})
+	// sqldb.DB.AutoMigrate(&authModels.User{})
+	// sqldb.DB.AutoMigrate(&authModels.SshKey{})
+	// sqldb.DB.AutoMigrate(&authModels.Role{})
+	// sqldb.DB.AutoMigrate(&authModels.Group{})
+	// sqldb.DB.AutoMigrate(&authModels.Organisation{})
+	// sqldb.DB.AutoMigrate(&authModels.Permission{})
 
-	sqldb.DB.AutoMigrate(&courseModels.Page{})
-	sqldb.DB.AutoMigrate(&courseModels.Section{})
-	sqldb.DB.AutoMigrate(&courseModels.Chapter{})
-	sqldb.DB.AutoMigrate(&courseModels.Course{})
+	// sqldb.DB.AutoMigrate(&courseModels.Page{})
+	// sqldb.DB.AutoMigrate(&courseModels.Section{})
+	// sqldb.DB.AutoMigrate(&courseModels.Chapter{})
+	// sqldb.DB.AutoMigrate(&courseModels.Course{})
 
 	print("DB migrated")
 
