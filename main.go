@@ -57,7 +57,7 @@ func main() {
 
 	sqldb.ConnectDB()
 
-	print("DB connected")
+	// print("DB connected")
 
 	// sqldb.DB.AutoMigrate(&authModels.User{})
 	// sqldb.DB.AutoMigrate(&authModels.SshKey{})
@@ -71,7 +71,7 @@ func main() {
 	// sqldb.DB.AutoMigrate(&courseModels.Chapter{})
 	// sqldb.DB.AutoMigrate(&courseModels.Course{})
 
-	print("DB migrated")
+	// print("DB migrated")
 
 	initDB()
 
