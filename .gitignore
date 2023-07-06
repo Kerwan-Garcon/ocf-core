@@ -6,5 +6,5 @@ docs
 src/*.md
 *.db
 __debug_bin
-.env
+# .env
 courses/*
